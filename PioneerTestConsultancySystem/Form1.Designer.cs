@@ -99,6 +99,11 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.ProjectDetails = new System.Windows.Forms.DataGridView();
             this.EducationalDetails = new System.Windows.Forms.DataGridView();
             this.Show = new System.Windows.Forms.Button();
@@ -107,11 +112,7 @@
             this.CompanyDetails = new System.Windows.Forms.DataGridView();
             this.TechnicalDetails = new System.Windows.Forms.DataGridView();
             this.EmployeeDetails = new System.Windows.Forms.DataGridView();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.Technical_Details.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -147,7 +148,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage1.BackColor = System.Drawing.Color.Maroon;
             this.tabPage1.Controls.Add(this.Clear);
             this.tabPage1.Controls.Add(this.Save);
             this.tabPage1.Controls.Add(this.Zipcodetextbox);
@@ -171,11 +172,11 @@
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tabPage1.Location = new System.Drawing.Point(4, 32);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1147, 701);
+            this.tabPage1.Size = new System.Drawing.Size(1147, 704);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Employee_Details";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -208,7 +209,7 @@
             this.Zipcodetextbox.Location = new System.Drawing.Point(457, 395);
             this.Zipcodetextbox.Margin = new System.Windows.Forms.Padding(4);
             this.Zipcodetextbox.Name = "Zipcodetextbox";
-            this.Zipcodetextbox.Size = new System.Drawing.Size(224, 27);
+            this.Zipcodetextbox.Size = new System.Drawing.Size(224, 23);
             this.Zipcodetextbox.TabIndex = 19;
             // 
             // HomeCountrytextbox
@@ -216,7 +217,7 @@
             this.HomeCountrytextbox.Location = new System.Drawing.Point(457, 354);
             this.HomeCountrytextbox.Margin = new System.Windows.Forms.Padding(4);
             this.HomeCountrytextbox.Name = "HomeCountrytextbox";
-            this.HomeCountrytextbox.Size = new System.Drawing.Size(224, 27);
+            this.HomeCountrytextbox.Size = new System.Drawing.Size(224, 23);
             this.HomeCountrytextbox.TabIndex = 18;
             // 
             // CurrentCountrytextbox
@@ -224,7 +225,7 @@
             this.CurrentCountrytextbox.Location = new System.Drawing.Point(457, 312);
             this.CurrentCountrytextbox.Margin = new System.Windows.Forms.Padding(4);
             this.CurrentCountrytextbox.Name = "CurrentCountrytextbox";
-            this.CurrentCountrytextbox.Size = new System.Drawing.Size(224, 27);
+            this.CurrentCountrytextbox.Size = new System.Drawing.Size(224, 23);
             this.CurrentCountrytextbox.TabIndex = 17;
             // 
             // Address2textbox
@@ -232,7 +233,7 @@
             this.Address2textbox.Location = new System.Drawing.Point(457, 271);
             this.Address2textbox.Margin = new System.Windows.Forms.Padding(4);
             this.Address2textbox.Name = "Address2textbox";
-            this.Address2textbox.Size = new System.Drawing.Size(224, 27);
+            this.Address2textbox.Size = new System.Drawing.Size(224, 23);
             this.Address2textbox.TabIndex = 16;
             // 
             // Address1textbox
@@ -240,7 +241,7 @@
             this.Address1textbox.Location = new System.Drawing.Point(457, 230);
             this.Address1textbox.Margin = new System.Windows.Forms.Padding(4);
             this.Address1textbox.Name = "Address1textbox";
-            this.Address1textbox.Size = new System.Drawing.Size(224, 27);
+            this.Address1textbox.Size = new System.Drawing.Size(224, 23);
             this.Address1textbox.TabIndex = 15;
             // 
             // AlternateMobileNumbertextbox
@@ -248,7 +249,7 @@
             this.AlternateMobileNumbertextbox.Location = new System.Drawing.Point(457, 189);
             this.AlternateMobileNumbertextbox.Margin = new System.Windows.Forms.Padding(4);
             this.AlternateMobileNumbertextbox.Name = "AlternateMobileNumbertextbox";
-            this.AlternateMobileNumbertextbox.Size = new System.Drawing.Size(224, 27);
+            this.AlternateMobileNumbertextbox.Size = new System.Drawing.Size(224, 23);
             this.AlternateMobileNumbertextbox.TabIndex = 14;
             // 
             // MobileNumbertextbox
@@ -256,7 +257,7 @@
             this.MobileNumbertextbox.Location = new System.Drawing.Point(457, 148);
             this.MobileNumbertextbox.Margin = new System.Windows.Forms.Padding(4);
             this.MobileNumbertextbox.Name = "MobileNumbertextbox";
-            this.MobileNumbertextbox.Size = new System.Drawing.Size(224, 27);
+            this.MobileNumbertextbox.Size = new System.Drawing.Size(224, 23);
             this.MobileNumbertextbox.TabIndex = 13;
             // 
             // Emailtextbox
@@ -264,7 +265,7 @@
             this.Emailtextbox.Location = new System.Drawing.Point(457, 106);
             this.Emailtextbox.Margin = new System.Windows.Forms.Padding(4);
             this.Emailtextbox.Name = "Emailtextbox";
-            this.Emailtextbox.Size = new System.Drawing.Size(224, 27);
+            this.Emailtextbox.Size = new System.Drawing.Size(224, 23);
             this.Emailtextbox.TabIndex = 12;
             // 
             // LastNametextbox
@@ -272,7 +273,7 @@
             this.LastNametextbox.Location = new System.Drawing.Point(457, 73);
             this.LastNametextbox.Margin = new System.Windows.Forms.Padding(4);
             this.LastNametextbox.Name = "LastNametextbox";
-            this.LastNametextbox.Size = new System.Drawing.Size(224, 27);
+            this.LastNametextbox.Size = new System.Drawing.Size(224, 23);
             this.LastNametextbox.TabIndex = 11;
             // 
             // FirstNametextbox
@@ -280,7 +281,7 @@
             this.FirstNametextbox.Location = new System.Drawing.Point(457, 38);
             this.FirstNametextbox.Margin = new System.Windows.Forms.Padding(4);
             this.FirstNametextbox.Name = "FirstNametextbox";
-            this.FirstNametextbox.Size = new System.Drawing.Size(224, 27);
+            this.FirstNametextbox.Size = new System.Drawing.Size(224, 23);
             this.FirstNametextbox.TabIndex = 10;
             this.FirstNametextbox.TextChanged += new System.EventHandler(this.FirstNametextbox_TextChanged);
             // 
@@ -290,7 +291,7 @@
             this.label14.Location = new System.Drawing.Point(159, 404);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(77, 20);
+            this.label14.Size = new System.Drawing.Size(68, 17);
             this.label14.TabIndex = 9;
             this.label14.Text = "ZipCode";
             // 
@@ -300,7 +301,7 @@
             this.label13.Location = new System.Drawing.Point(159, 362);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(129, 20);
+            this.label13.Size = new System.Drawing.Size(110, 17);
             this.label13.TabIndex = 8;
             this.label13.Text = "Home Country";
             // 
@@ -310,7 +311,7 @@
             this.label12.Location = new System.Drawing.Point(159, 321);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(143, 20);
+            this.label12.Size = new System.Drawing.Size(123, 17);
             this.label12.TabIndex = 7;
             this.label12.Text = "Current Country";
             // 
@@ -320,7 +321,7 @@
             this.label11.Location = new System.Drawing.Point(159, 280);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(88, 20);
+            this.label11.Size = new System.Drawing.Size(76, 17);
             this.label11.TabIndex = 6;
             this.label11.Text = "Address2";
             // 
@@ -330,7 +331,7 @@
             this.label10.Location = new System.Drawing.Point(159, 239);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 20);
+            this.label10.Size = new System.Drawing.Size(76, 17);
             this.label10.TabIndex = 5;
             this.label10.Text = "Address1";
             // 
@@ -340,7 +341,7 @@
             this.label9.Location = new System.Drawing.Point(159, 198);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(217, 20);
+            this.label9.Size = new System.Drawing.Size(187, 17);
             this.label9.TabIndex = 4;
             this.label9.Text = "Alternate Mobile Number";
             // 
@@ -350,7 +351,7 @@
             this.label8.Location = new System.Drawing.Point(159, 156);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(135, 20);
+            this.label8.Size = new System.Drawing.Size(116, 17);
             this.label8.TabIndex = 3;
             this.label8.Text = "Mobile Number";
             // 
@@ -360,7 +361,7 @@
             this.label7.Location = new System.Drawing.Point(159, 115);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 20);
+            this.label7.Size = new System.Drawing.Size(47, 17);
             this.label7.TabIndex = 2;
             this.label7.Text = "Email";
             // 
@@ -370,7 +371,7 @@
             this.label6.Location = new System.Drawing.Point(159, 80);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 20);
+            this.label6.Size = new System.Drawing.Size(85, 17);
             this.label6.TabIndex = 1;
             this.label6.Text = "Last Name";
             // 
@@ -380,14 +381,14 @@
             this.label5.Location = new System.Drawing.Point(159, 45);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(102, 20);
+            this.label5.Size = new System.Drawing.Size(86, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "First Name\r\n";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage2.BackColor = System.Drawing.Color.Maroon;
             this.tabPage2.Controls.Add(this.Clear1);
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.YearOfPasstextbox);
@@ -396,11 +397,11 @@
             this.tabPage2.Controls.Add(this.label23);
             this.tabPage2.Controls.Add(this.label22);
             this.tabPage2.Controls.Add(this.label21);
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1147, 701);
+            this.tabPage2.Size = new System.Drawing.Size(1147, 704);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Educational_Details";
             // 
@@ -432,7 +433,7 @@
             this.YearOfPasstextbox.Location = new System.Drawing.Point(468, 190);
             this.YearOfPasstextbox.Margin = new System.Windows.Forms.Padding(4);
             this.YearOfPasstextbox.Name = "YearOfPasstextbox";
-            this.YearOfPasstextbox.Size = new System.Drawing.Size(255, 27);
+            this.YearOfPasstextbox.Size = new System.Drawing.Size(255, 23);
             this.YearOfPasstextbox.TabIndex = 7;
             // 
             // CourseSpecialisationtextbox
@@ -440,7 +441,7 @@
             this.CourseSpecialisationtextbox.Location = new System.Drawing.Point(468, 149);
             this.CourseSpecialisationtextbox.Margin = new System.Windows.Forms.Padding(4);
             this.CourseSpecialisationtextbox.Name = "CourseSpecialisationtextbox";
-            this.CourseSpecialisationtextbox.Size = new System.Drawing.Size(255, 27);
+            this.CourseSpecialisationtextbox.Size = new System.Drawing.Size(255, 23);
             this.CourseSpecialisationtextbox.TabIndex = 6;
             // 
             // CourseTypetextbox
@@ -448,7 +449,7 @@
             this.CourseTypetextbox.Location = new System.Drawing.Point(468, 108);
             this.CourseTypetextbox.Margin = new System.Windows.Forms.Padding(4);
             this.CourseTypetextbox.Name = "CourseTypetextbox";
-            this.CourseTypetextbox.Size = new System.Drawing.Size(255, 27);
+            this.CourseTypetextbox.Size = new System.Drawing.Size(255, 23);
             this.CourseTypetextbox.TabIndex = 5;
             // 
             // label23
@@ -458,7 +459,7 @@
             this.label23.Location = new System.Drawing.Point(191, 199);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(121, 20);
+            this.label23.Size = new System.Drawing.Size(104, 17);
             this.label23.TabIndex = 3;
             this.label23.Text = "Year Of Pass";
             // 
@@ -469,7 +470,7 @@
             this.label22.Location = new System.Drawing.Point(191, 158);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(193, 20);
+            this.label22.Size = new System.Drawing.Size(165, 17);
             this.label22.TabIndex = 2;
             this.label22.Text = "Course Specialisation";
             // 
@@ -480,13 +481,13 @@
             this.label21.Location = new System.Drawing.Point(191, 116);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(115, 20);
+            this.label21.Size = new System.Drawing.Size(100, 17);
             this.label21.TabIndex = 1;
             this.label21.Text = "Course Type";
             // 
             // tabPage3
             // 
-            this.tabPage3.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage3.BackColor = System.Drawing.Color.Maroon;
             this.tabPage3.Controls.Add(this.Clear2);
             this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Controls.Add(this.Databasestextbox);
@@ -498,11 +499,11 @@
             this.tabPage3.Controls.Add(this.label17);
             this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.ForeColor = System.Drawing.Color.White;
-            this.tabPage3.Location = new System.Drawing.Point(4, 32);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(1147, 701);
+            this.tabPage3.Size = new System.Drawing.Size(1147, 704);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Technical_Details";
             // 
@@ -534,7 +535,7 @@
             this.Databasestextbox.Location = new System.Drawing.Point(469, 225);
             this.Databasestextbox.Margin = new System.Windows.Forms.Padding(4);
             this.Databasestextbox.Name = "Databasestextbox";
-            this.Databasestextbox.Size = new System.Drawing.Size(203, 27);
+            this.Databasestextbox.Size = new System.Drawing.Size(203, 23);
             this.Databasestextbox.TabIndex = 9;
             // 
             // ORMtextbox
@@ -542,7 +543,7 @@
             this.ORMtextbox.Location = new System.Drawing.Point(469, 184);
             this.ORMtextbox.Margin = new System.Windows.Forms.Padding(4);
             this.ORMtextbox.Name = "ORMtextbox";
-            this.ORMtextbox.Size = new System.Drawing.Size(203, 27);
+            this.ORMtextbox.Size = new System.Drawing.Size(203, 23);
             this.ORMtextbox.TabIndex = 8;
             // 
             // Programmingtextbox
@@ -550,7 +551,7 @@
             this.Programmingtextbox.Location = new System.Drawing.Point(469, 142);
             this.Programmingtextbox.Margin = new System.Windows.Forms.Padding(4);
             this.Programmingtextbox.Name = "Programmingtextbox";
-            this.Programmingtextbox.Size = new System.Drawing.Size(203, 27);
+            this.Programmingtextbox.Size = new System.Drawing.Size(203, 23);
             this.Programmingtextbox.TabIndex = 7;
             // 
             // UItextbox
@@ -558,7 +559,7 @@
             this.UItextbox.Location = new System.Drawing.Point(469, 101);
             this.UItextbox.Margin = new System.Windows.Forms.Padding(4);
             this.UItextbox.Name = "UItextbox";
-            this.UItextbox.Size = new System.Drawing.Size(203, 27);
+            this.UItextbox.Size = new System.Drawing.Size(203, 23);
             this.UItextbox.TabIndex = 6;
             // 
             // label19
@@ -568,7 +569,7 @@
             this.label19.Location = new System.Drawing.Point(188, 234);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(99, 20);
+            this.label19.Size = new System.Drawing.Size(85, 17);
             this.label19.TabIndex = 4;
             this.label19.Text = "Databases";
             // 
@@ -579,7 +580,7 @@
             this.label18.Location = new System.Drawing.Point(188, 192);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(168, 20);
+            this.label18.Size = new System.Drawing.Size(145, 17);
             this.label18.TabIndex = 3;
             this.label18.Text = "ORM Technologies";
             // 
@@ -590,7 +591,7 @@
             this.label17.Location = new System.Drawing.Point(188, 151);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(217, 20);
+            this.label17.Size = new System.Drawing.Size(188, 17);
             this.label17.TabIndex = 2;
             this.label17.Text = "Programming Languages";
             // 
@@ -601,13 +602,13 @@
             this.label16.Location = new System.Drawing.Point(188, 110);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(27, 20);
+            this.label16.Size = new System.Drawing.Size(23, 17);
             this.label16.TabIndex = 1;
             this.label16.Text = "UI";
             // 
             // tabPage4
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage4.BackColor = System.Drawing.Color.Maroon;
             this.tabPage4.Controls.Add(this.EmployeeID1textbox);
             this.tabPage4.Controls.Add(this.label15);
             this.tabPage4.Controls.Add(this.Clear3);
@@ -620,12 +621,12 @@
             this.tabPage4.Controls.Add(this.label28);
             this.tabPage4.Controls.Add(this.label27);
             this.tabPage4.Controls.Add(this.label26);
-            this.tabPage4.ForeColor = System.Drawing.Color.RosyBrown;
-            this.tabPage4.Location = new System.Drawing.Point(4, 32);
+            this.tabPage4.ForeColor = System.Drawing.Color.Maroon;
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(1147, 701);
+            this.tabPage4.Size = new System.Drawing.Size(1147, 704);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Project_Details";
             // 
@@ -633,7 +634,7 @@
             // 
             this.EmployeeID1textbox.Location = new System.Drawing.Point(460, 112);
             this.EmployeeID1textbox.Name = "EmployeeID1textbox";
-            this.EmployeeID1textbox.Size = new System.Drawing.Size(222, 27);
+            this.EmployeeID1textbox.Size = new System.Drawing.Size(222, 23);
             this.EmployeeID1textbox.TabIndex = 15;
             // 
             // label15
@@ -642,7 +643,7 @@
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label15.Location = new System.Drawing.Point(160, 115);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(109, 20);
+            this.label15.Size = new System.Drawing.Size(93, 17);
             this.label15.TabIndex = 14;
             this.label15.Text = "EmployeeID";
             // 
@@ -674,7 +675,7 @@
             this.Roletextbox.Location = new System.Drawing.Point(460, 268);
             this.Roletextbox.Margin = new System.Windows.Forms.Padding(4);
             this.Roletextbox.Name = "Roletextbox";
-            this.Roletextbox.Size = new System.Drawing.Size(222, 27);
+            this.Roletextbox.Size = new System.Drawing.Size(222, 23);
             this.Roletextbox.TabIndex = 11;
             // 
             // ProjectLocationtextbox
@@ -682,7 +683,7 @@
             this.ProjectLocationtextbox.Location = new System.Drawing.Point(460, 226);
             this.ProjectLocationtextbox.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectLocationtextbox.Name = "ProjectLocationtextbox";
-            this.ProjectLocationtextbox.Size = new System.Drawing.Size(222, 27);
+            this.ProjectLocationtextbox.Size = new System.Drawing.Size(222, 23);
             this.ProjectLocationtextbox.TabIndex = 10;
             // 
             // ClientNametextbox
@@ -690,7 +691,7 @@
             this.ClientNametextbox.Location = new System.Drawing.Point(460, 185);
             this.ClientNametextbox.Margin = new System.Windows.Forms.Padding(4);
             this.ClientNametextbox.Name = "ClientNametextbox";
-            this.ClientNametextbox.Size = new System.Drawing.Size(222, 27);
+            this.ClientNametextbox.Size = new System.Drawing.Size(222, 23);
             this.ClientNametextbox.TabIndex = 9;
             // 
             // ProjectNametextbox
@@ -698,7 +699,7 @@
             this.ProjectNametextbox.Location = new System.Drawing.Point(460, 144);
             this.ProjectNametextbox.Margin = new System.Windows.Forms.Padding(4);
             this.ProjectNametextbox.Name = "ProjectNametextbox";
-            this.ProjectNametextbox.Size = new System.Drawing.Size(222, 27);
+            this.ProjectNametextbox.Size = new System.Drawing.Size(222, 23);
             this.ProjectNametextbox.TabIndex = 8;
             // 
             // label29
@@ -708,7 +709,7 @@
             this.label29.Location = new System.Drawing.Point(156, 276);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(57, 20);
+            this.label29.Size = new System.Drawing.Size(49, 17);
             this.label29.TabIndex = 5;
             this.label29.Text = "Roles";
             // 
@@ -719,7 +720,7 @@
             this.label28.Location = new System.Drawing.Point(156, 235);
             this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(81, 20);
+            this.label28.Size = new System.Drawing.Size(70, 17);
             this.label28.TabIndex = 4;
             this.label28.Text = "Location";
             // 
@@ -730,7 +731,7 @@
             this.label27.Location = new System.Drawing.Point(156, 194);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(112, 20);
+            this.label27.Size = new System.Drawing.Size(95, 17);
             this.label27.TabIndex = 3;
             this.label27.Text = "Client Name";
             // 
@@ -741,7 +742,7 @@
             this.label26.Location = new System.Drawing.Point(156, 152);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(123, 20);
+            this.label26.Size = new System.Drawing.Size(105, 17);
             this.label26.TabIndex = 2;
             this.label26.Text = "Project Name";
             // 
@@ -758,10 +759,10 @@
             this.tabPage5.Controls.Add(this.label3);
             this.tabPage5.Controls.Add(this.label2);
             this.tabPage5.Controls.Add(this.label1);
-            this.tabPage5.Location = new System.Drawing.Point(4, 32);
+            this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1147, 701);
+            this.tabPage5.Size = new System.Drawing.Size(1147, 704);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Company_Details";
             // 
@@ -791,28 +792,28 @@
             // 
             this.Websitetextbox.Location = new System.Drawing.Point(495, 158);
             this.Websitetextbox.Name = "Websitetextbox";
-            this.Websitetextbox.Size = new System.Drawing.Size(204, 27);
+            this.Websitetextbox.Size = new System.Drawing.Size(204, 23);
             this.Websitetextbox.TabIndex = 7;
             // 
             // Locationtextbox
             // 
             this.Locationtextbox.Location = new System.Drawing.Point(495, 125);
             this.Locationtextbox.Name = "Locationtextbox";
-            this.Locationtextbox.Size = new System.Drawing.Size(204, 27);
+            this.Locationtextbox.Size = new System.Drawing.Size(204, 23);
             this.Locationtextbox.TabIndex = 6;
             // 
             // ContactNumbertextbox
             // 
             this.ContactNumbertextbox.Location = new System.Drawing.Point(495, 92);
             this.ContactNumbertextbox.Name = "ContactNumbertextbox";
-            this.ContactNumbertextbox.Size = new System.Drawing.Size(204, 27);
+            this.ContactNumbertextbox.Size = new System.Drawing.Size(204, 23);
             this.ContactNumbertextbox.TabIndex = 5;
             // 
             // Employertextbox
             // 
             this.Employertextbox.Location = new System.Drawing.Point(495, 59);
             this.Employertextbox.Name = "Employertextbox";
-            this.Employertextbox.Size = new System.Drawing.Size(204, 27);
+            this.Employertextbox.Size = new System.Drawing.Size(204, 23);
             this.Employertextbox.TabIndex = 4;
             // 
             // label4
@@ -821,7 +822,7 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label4.Location = new System.Drawing.Point(156, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
+            this.label4.Size = new System.Drawing.Size(66, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Website";
             // 
@@ -831,7 +832,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label3.Location = new System.Drawing.Point(156, 132);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 20);
+            this.label3.Size = new System.Drawing.Size(70, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Location";
             // 
@@ -841,7 +842,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label2.Location = new System.Drawing.Point(156, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 20);
+            this.label2.Size = new System.Drawing.Size(119, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "ContactNumber";
             // 
@@ -851,7 +852,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(156, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 20);
+            this.label1.Size = new System.Drawing.Size(116, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "EmployerName";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -859,20 +860,20 @@
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPage6.Location = new System.Drawing.Point(4, 32);
+            this.tabPage6.Location = new System.Drawing.Point(4, 29);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1147, 701);
+            this.tabPage6.Size = new System.Drawing.Size(1147, 704);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Report";
             // 
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.RosyBrown;
-            this.tabPage7.Location = new System.Drawing.Point(4, 32);
+            this.tabPage7.Location = new System.Drawing.Point(4, 29);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1147, 701);
+            this.tabPage7.Size = new System.Drawing.Size(1147, 704);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Others";
             // 
@@ -892,12 +893,62 @@
             this.tabPage8.Controls.Add(this.CompanyDetails);
             this.tabPage8.Controls.Add(this.TechnicalDetails);
             this.tabPage8.Controls.Add(this.EmployeeDetails);
-            this.tabPage8.Location = new System.Drawing.Point(4, 32);
+            this.tabPage8.Location = new System.Drawing.Point(4, 29);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1147, 701);
+            this.tabPage8.Size = new System.Drawing.Size(1147, 704);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "DashBoard";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.ForeColor = System.Drawing.Color.Olive;
+            this.label32.Location = new System.Drawing.Point(53, 522);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(114, 17);
+            this.label32.TabIndex = 13;
+            this.label32.Text = "Project Details";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.ForeColor = System.Drawing.Color.Olive;
+            this.label31.Location = new System.Drawing.Point(614, 315);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(148, 17);
+            this.label31.TabIndex = 12;
+            this.label31.Text = "Educational Details";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.Color.Olive;
+            this.label25.Location = new System.Drawing.Point(49, 315);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(129, 17);
+            this.label25.TabIndex = 11;
+            this.label25.Text = "Company Details";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.Color.Olive;
+            this.label24.Location = new System.Drawing.Point(610, 68);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(133, 17);
+            this.label24.TabIndex = 10;
+            this.label24.Text = "Technical Details";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.Color.Olive;
+            this.label20.Location = new System.Drawing.Point(45, 68);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(133, 17);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "Employee Details";
             // 
             // ProjectDetails
             // 
@@ -934,7 +985,7 @@
             // 
             this.EmployeeIDtextbox.Location = new System.Drawing.Point(259, 22);
             this.EmployeeIDtextbox.Name = "EmployeeIDtextbox";
-            this.EmployeeIDtextbox.Size = new System.Drawing.Size(142, 27);
+            this.EmployeeIDtextbox.Size = new System.Drawing.Size(142, 23);
             this.EmployeeIDtextbox.TabIndex = 5;
             // 
             // label30
@@ -943,7 +994,7 @@
             this.label30.ForeColor = System.Drawing.Color.Olive;
             this.label30.Location = new System.Drawing.Point(88, 25);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(109, 20);
+            this.label30.Size = new System.Drawing.Size(93, 17);
             this.label30.TabIndex = 4;
             this.label30.Text = "EmployeeID";
             this.label30.Click += new System.EventHandler(this.label30_Click);
@@ -979,62 +1030,12 @@
             this.EmployeeDetails.Size = new System.Drawing.Size(517, 200);
             this.EmployeeDetails.TabIndex = 1;
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.ForeColor = System.Drawing.Color.Olive;
-            this.label20.Location = new System.Drawing.Point(45, 68);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(156, 20);
-            this.label20.TabIndex = 9;
-            this.label20.Text = "Employee Details";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.ForeColor = System.Drawing.Color.Olive;
-            this.label24.Location = new System.Drawing.Point(610, 68);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(156, 20);
-            this.label24.TabIndex = 10;
-            this.label24.Text = "Technical Details";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.ForeColor = System.Drawing.Color.Olive;
-            this.label25.Location = new System.Drawing.Point(49, 315);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(152, 20);
-            this.label25.TabIndex = 11;
-            this.label25.Text = "Company Details";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.ForeColor = System.Drawing.Color.Olive;
-            this.label31.Location = new System.Drawing.Point(614, 315);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(173, 20);
-            this.label31.TabIndex = 12;
-            this.label31.Text = "Educational Details";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.ForeColor = System.Drawing.Color.Olive;
-            this.label32.Location = new System.Drawing.Point(53, 522);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(135, 20);
-            this.label32.TabIndex = 13;
-            this.label32.Text = "Project Details";
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tomato;
-            this.ClientSize = new System.Drawing.Size(1196, 766);
+            this.ClientSize = new System.Drawing.Size(1196, 733);
             this.Controls.Add(this.Technical_Details);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
@@ -1149,6 +1150,7 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 

@@ -21,6 +21,10 @@ namespace EmployeeDataAcces
                 string sqlEmployee = @"INSERT INTO Employee_Details(First_Name,Last_Name,Email,Mobile_Number,AlternateMobileNumber,Address1,Adress2,Current_Country,Home_Country,Zipcode)VALUES('" + First_Name + "'," + "'" + Last_Name + "'," + "'" + Email + "'," + "" + Mobile_Number + "," + "" + AlternateMobileNumber + "," + "'" + Address1 + "'," + "'" + Address2 + "'," + "'" + Current_Country + "'," + "'" + Home_Country + "'," + "" + ZipCode + ")";
                 SqlCommand command = new SqlCommand(sqlEmployee, mysqlconnection);
                 result = command.ExecuteNonQuery();
+                if(result>0)
+                {
+                    MessageBox.Show("Data have save Successfully.Thank you");
+                }
                 mysqlconnection.Close();
             }
             catch (Exception ex)
@@ -48,6 +52,10 @@ namespace EmployeeDataAcces
                 SqlCommand command;
                 command = new SqlCommand(q, mysqlconnection);
                 result = command.ExecuteNonQuery();
+                if(result>0)
+                {
+                    MessageBox.Show("Data have save Successfully.Thank you");
+                }
                 mysqlconnection.Close();
             }
             catch (Exception ex)
@@ -76,6 +84,10 @@ namespace EmployeeDataAcces
                 SqlCommand command;
                 command = new SqlCommand(q, mysqlconnection);
                 result = command.ExecuteNonQuery();
+                if (result > 0)
+                {
+                    MessageBox.Show("Data have save Successfully.Thank you");
+                }
                 mysqlconnection.Close();
             }
             catch (Exception ex)
@@ -102,7 +114,11 @@ namespace EmployeeDataAcces
                 string q = @"INSERT INTO Technical_Details(UI,Programming_Languages,ORM_Technologies,Databases)VALUES('" + UI + "'," + "'" + Programming_Languages + "'," + "'" + ORM_Technologies + "'," + "'" + Databases + "')";
                 SqlCommand command;
                 command = new SqlCommand(q, mysqlconnection);
-                command.ExecuteNonQuery();
+               result= command.ExecuteNonQuery();
+                if (result > 0)
+                {
+                    MessageBox.Show("Data have save Successfully.Thank you");
+                }
                 mysqlconnection.Close();
             }
             catch (Exception ex)
