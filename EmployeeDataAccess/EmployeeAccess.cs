@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PioneerTestConsultancySys.Model;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace EmployeeDataAcces
 {
     public class EmployeeAccess
     {
-        public int SaveEmployee(string First_Name, string Last_Name, string Email, long Mobile_Number, long AlternateMobileNumber, string Address1, string Address2, string Current_Country, string Home_Country, int ZipCode)
+        public int SaveEmployee(EmployeeModel Emp )
         {
             int result = 0;
             try
@@ -18,7 +19,7 @@ namespace EmployeeDataAcces
                 string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" + "Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);
                 mysqlconnection.Open();
-                string sqlEmployee = @"INSERT INTO Employee_Details(First_Name,Last_Name,Email,Mobile_Number,AlternateMobileNumber,Address1,Adress2,Current_Country,Home_Country,Zipcode)VALUES('" + First_Name + "'," + "'" + Last_Name + "'," + "'" + Email + "'," + "" + Mobile_Number + "," + "" + AlternateMobileNumber + "," + "'" + Address1 + "'," + "'" + Address2 + "'," + "'" + Current_Country + "'," + "'" + Home_Country + "'," + "" + ZipCode + ")";
+                string sqlEmployee = @"INSERT INTO Employee_Details(First_Name,Last_Name,Email,Mobile_Number,AlternateMobileNumber,Address1,Adress2,Current_Country,Home_Country,Zipcode)VALUES('" + Emp.First_Name + "'," + "'" + Emp.Last_Name + "'," + "'" +Emp.Email + "'," + "" +Emp. Mobile_Number + "," + "" +Emp. AlternateMobileNumber + "," + "'" + Emp.Address1 + "'," + "'" + Emp.Address2 + "'," + "'" + Emp.Current_Country + "'," + "'" + Emp.Home_Country + "'," + "" + Emp.ZipCode + ")";
                 SqlCommand command = new SqlCommand(sqlEmployee, mysqlconnection);
                 result = command.ExecuteNonQuery();
                 if(result>0)
@@ -133,6 +134,30 @@ namespace EmployeeDataAcces
 
 
 
+    }
+    public class CompanyAccess
+    {
+        public int SaveCompany1(string Employer_Name, long Contact_Number, string Location, string Website)
+        {
+            int result = 0;
+            try
+            {
+                string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
+                                       " Integrated Security=True";
+                SqlConnection mysqlconnection = new SqlConnection(connectionstring);
+                mysqlconnection.Open();
+                string q = @"INSERT INTO Company_Details(Employer_Name,Contact_Number,Location,Website)VALUES('" + Employer_Name + "'," + "" + Contact_Number + "," + "'" + Location + "'," + "'" + Website + "')";
+                SqlCommand command;
+                command = new SqlCommand(q, mysqlconnection);
+                result = command.ExecuteNonQuery();
+                mysqlconnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
+            }
+            return result;
+        }
     }
 }
 

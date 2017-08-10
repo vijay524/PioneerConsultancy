@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using EmployeeDataAcces;
+using PioneerTestConsultancySys.Model;
+using System;
 using System.Data.SqlClient;
-using EmployeeDataAcces;
+using System.Windows.Forms;
 
 namespace PioneerTestConsultancySystem
 {
@@ -49,20 +43,21 @@ namespace PioneerTestConsultancySystem
         private void button1_Click(object sender, EventArgs e)
         {
 
-
-            string First_Name = FirstNametextbox.Text;
-            string Last_Name = LastNametextbox.Text;
-            string Email = Emailtextbox.Text;
-            long Mobile_Number = Convert.ToInt64(MobileNumbertextbox.Text);
-            long AlternateMobileNumber = Convert.ToInt64(AlternateMobileNumbertextbox.Text);
-            string Address1 = Address1textbox.Text;
-            string Address2 = Address2textbox.Text;
-            string Current_Country = CurrentCountrytextbox.Text;
-            string Home_Country = HomeCountrytextbox.Text;
-            int ZipCode = Convert.ToInt32(Zipcodetextbox.Text);
-
+            EmployeeModel Emodel = new EmployeeModel()
+            {
+                First_Name = FirstNametextbox.Text,
+                Last_Name = LastNametextbox.Text,
+                Email = Emailtextbox.Text,
+                Mobile_Number = Convert.ToInt64(MobileNumbertextbox.Text),
+                AlternateMobileNumber = Convert.ToInt64(AlternateMobileNumbertextbox.Text),
+                Address1 = Address1textbox.Text,
+                Address2 = Address2textbox.Text,
+                Current_Country = CurrentCountrytextbox.Text,
+                Home_Country = HomeCountrytextbox.Text,
+                ZipCode = Convert.ToInt32(Zipcodetextbox.Text)
+            };
             EmployeeAccess EA = new EmployeeAccess();
-            EA.SaveEmployee(First_Name, Last_Name, Email, Mobile_Number, AlternateMobileNumber, Address1, Address2, Current_Country, Home_Country, ZipCode);
+            EA.SaveEmployee(Emodel);
 
         }
         private void label1_Click(object sender, EventArgs e)
@@ -154,84 +149,77 @@ namespace PioneerTestConsultancySystem
         {
             /*try
             {*/
-            string CourseType = CourseTypetextbox.Text;
-            string CourseSpecialisation = CourseSpecialisationtextbox.Text;
-            int YearOfPass = Convert.ToInt32(YearOfPasstextbox.Text);
+            EducationModel EduModel = new EducationModel();
+            EduModel.CourseType = CourseTypetextbox.Text;
+            EduModel.CourseSpecialisation = CourseSpecialisationtextbox.Text;
+            EduModel.YearOfPass = Convert.ToInt32(YearOfPasstextbox.Text);
             EducationAccess EdA = new EducationAccess();
-            EdA.SaveEducation(CourseType, CourseSpecialisation, YearOfPass);
+            EdA.SaveEducation(EduModel.CourseType, EduModel.CourseSpecialisation, EduModel.YearOfPass);
         }
 
-            /* string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
+        /* string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
+               " Integrated Security=True";
+        SqlConnection mysqlconnection = new SqlConnection(connectionstring);
+        mysqlconnection.Open();
+            string q = @"INSERT INTO Education_Details(CourseType,CourseSpecialisation,YearOfPass)VALUES('"+CourseType+"',"+"'"+CourseSpecialisation+"',"+""+YearOfPass+")";
+        SqlCommand command;
+        command = new SqlCommand(q, mysqlconnection);
+        command.ExecuteNonQuery();
+        mysqlconnection.Close();
+        }
+        catch(Exception ex)
+        {
+            MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
+        }
+
+    } */
+
+        public void button3_Click(object sender, EventArgs e)
+        {
+            /*try
+            {*/
+            TehnicalModel Tmodel = new TehnicalModel();
+            Tmodel.UI = UItextbox.Text;
+            Tmodel.Programming_Languages = Programmingtextbox.Text;
+            Tmodel.ORM_Technologies = ORMtextbox.Text;
+            Tmodel.Databases = Databasestextbox.Text;
+            TechnicalAccess TA = new TechnicalAccess();
+            TA.SaveTech(Tmodel.UI, Tmodel.Programming_Languages, Tmodel.ORM_Technologies, Tmodel.Databases);
+
+
+            /*string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
                    " Integrated Security=True";
             SqlConnection mysqlconnection = new SqlConnection(connectionstring);
             mysqlconnection.Open();
-                string q = @"INSERT INTO Education_Details(CourseType,CourseSpecialisation,YearOfPass)VALUES('"+CourseType+"',"+"'"+CourseSpecialisation+"',"+""+YearOfPass+")";
+            string q = @"INSERT INTO Technical_Details(UI,Programming_Languages,ORM_Technologies,Databases)VALUES('" + UI + "'," + "'" + Programming_Languages + "'," + "'" + ORM_Technologies + "'," + "'" + Databases + "')";
             SqlCommand command;
             command = new SqlCommand(q, mysqlconnection);
             command.ExecuteNonQuery();
             mysqlconnection.Close();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
-            }
-           
-        } */
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
+        }*/
 
-            public void button3_Click(object sender, EventArgs e)
-            {
-                /*try
-                {*/
-                    string UI = UItextbox.Text;
-                    string Programming_Languages = Programmingtextbox.Text;
-                    string ORM_Technologies = ORMtextbox.Text;
-                    string Databases = Databasestextbox.Text;
-            TechnicalAccess TA = new TechnicalAccess();
-            TA.SaveTech(UI, Programming_Languages, ORM_Technologies, Databases);
-
-
-                    /*string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
-                           " Integrated Security=True";
-                    SqlConnection mysqlconnection = new SqlConnection(connectionstring);
-                    mysqlconnection.Open();
-                    string q = @"INSERT INTO Technical_Details(UI,Programming_Languages,ORM_Technologies,Databases)VALUES('" + UI + "'," + "'" + Programming_Languages + "'," + "'" + ORM_Technologies + "'," + "'" + Databases + "')";
-                    SqlCommand command;
-                    command = new SqlCommand(q, mysqlconnection);
-                    command.ExecuteNonQuery();
-                    mysqlconnection.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
-                }*/
-
-            }
-
+        }
+    
             private void button9_Click(object sender, EventArgs e)
             {
-                try
-                {
-                    string Employer_Name = Employertextbox.Text;
-                    long Contact_NUmber = Convert.ToInt64(ContactNumbertextbox.Text);
-                    string Location = Locationtextbox.Text;
-                    var Website = Websitetextbox.Text;
-                    string Databases = Databasestextbox.Text;
-                    string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
-                           " Integrated Security=True";
-                    SqlConnection mysqlconnection = new SqlConnection(connectionstring);
-                    mysqlconnection.Open();
-                    string q = @"INSERT INTO Company_Details(Employer_Name,Contact_Number,Location,Website)VALUES('" + Employer_Name + "'," + "" + Contact_NUmber + "," + "'" + Location + "'," + "'" + Website + "')";
-                    SqlCommand command;
-                    command = new SqlCommand(q, mysqlconnection);
-                    command.ExecuteNonQuery();
-                    mysqlconnection.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("An error has been occured, please contact the administartor: " + ex.Message);
-                }
+            /*try
+            {*/
+            CompanyModel CModel = new CompanyModel();
+           
+            CModel.Employer_Name = Employertextbox.Text;
+            CModel.Contact_Number = Convert.ToInt64(ContactNumbertextbox.Text);
+            CModel.Location = Locationtextbox.Text;
+            CModel.Website = Websitetextbox.Text;
+          
+            CompanyAccess CA = new CompanyAccess();
+            CA.SaveCompany1(CModel.Employer_Name, CModel.Contact_Number, CModel.Location, CModel.Website);
 
-            }
+
+        }
 
             private void label30_Click(object sender, EventArgs e)
             {
@@ -240,16 +228,17 @@ namespace PioneerTestConsultancySystem
 
             private void button5_Click(object sender, EventArgs e)
             {
-                /* try
-                 {*/
-                int EmployeeID = Convert.ToInt32(EmployeeID1textbox.Text);
-                string Project_Name = ProjectNametextbox.Text;
-                string Client_Name = ClientNametextbox.Text;
-                string Location = ProjectLocationtextbox.Text;
-                string Roles = Roletextbox.Text;
-                string Databases = Databasestextbox.Text;
+            /* try
+             {*/
+            ProjectModel PModel = new ProjectModel();
+            PModel.EmployeeID = Convert.ToInt32(EmployeeID1textbox.Text);
+            PModel.Project_Name = ProjectNametextbox.Text;
+            PModel.Client_Name = ClientNametextbox.Text;
+            PModel.Location = ProjectLocationtextbox.Text;
+            PModel.Roles = Roletextbox.Text;
+            PModel.Databases = Databasestextbox.Text;
                 ProjectAccess PA = new ProjectAccess();
-                PA.SaveProject(EmployeeID, Project_Name, Client_Name, Location, Roles);
+                PA.SaveProject(PModel.EmployeeID, PModel.Project_Name, PModel.Client_Name, PModel.Location, PModel.Roles);
                 /*string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
                        " Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);

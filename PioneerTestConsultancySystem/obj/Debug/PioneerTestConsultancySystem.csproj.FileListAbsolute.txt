@@ -18,3 +18,5 @@ C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsulta
 C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\PioneerTestConsultancySystem\obj\Debug\PioneerTestConsultancySystem.csprojResolveAssemblyReference.cache
 C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\PioneerTestConsultancySystem\bin\Debug\EmployeeDataAccess.dll
 C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\PioneerTestConsultancySystem\bin\Debug\EmployeeDataAccess.pdb
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\PioneerTestConsultancySystem\bin\Debug\Model.dll
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\PioneerTestConsultancySystem\bin\Debug\Model.pdb

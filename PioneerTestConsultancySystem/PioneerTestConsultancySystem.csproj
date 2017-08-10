@@ -87,6 +87,10 @@
       <Project>{3DC272EE-0AA8-463A-9B31-B24B0C93B411}</Project>
       <Name>EmployeeDataAccess.DAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Model\PioneerTestConsultancySys.Model.csproj">
+      <Project>{A98E0BA9-0D2A-4C8E-B843-F931A70AE443}</Project>
+      <Name>PioneerTestConsultancySys.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
