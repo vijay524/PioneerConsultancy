@@ -154,7 +154,7 @@ namespace PioneerTestConsultancySystem
             EduModel.CourseSpecialisation = CourseSpecialisationtextbox.Text;
             EduModel.YearOfPass = Convert.ToInt32(YearOfPasstextbox.Text);
             EducationAccess EdA = new EducationAccess();
-            EdA.SaveEducation(EduModel.CourseType, EduModel.CourseSpecialisation, EduModel.YearOfPass);
+            EdA.SaveEducation(EduModel);
         }
 
         /* string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
@@ -184,7 +184,7 @@ namespace PioneerTestConsultancySystem
             Tmodel.ORM_Technologies = ORMtextbox.Text;
             Tmodel.Databases = Databasestextbox.Text;
             TechnicalAccess TA = new TechnicalAccess();
-            TA.SaveTech(Tmodel.UI, Tmodel.Programming_Languages, Tmodel.ORM_Technologies, Tmodel.Databases);
+            TA.SaveTech(Tmodel);
 
 
             /*string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
@@ -216,7 +216,7 @@ namespace PioneerTestConsultancySystem
             CModel.Website = Websitetextbox.Text;
           
             CompanyAccess CA = new CompanyAccess();
-            CA.SaveCompany1(CModel.Employer_Name, CModel.Contact_Number, CModel.Location, CModel.Website);
+            CA.SaveCompany1(CModel);
 
 
         }
@@ -238,7 +238,7 @@ namespace PioneerTestConsultancySystem
             PModel.Roles = Roletextbox.Text;
             PModel.Databases = Databasestextbox.Text;
                 ProjectAccess PA = new ProjectAccess();
-                PA.SaveProject(PModel.EmployeeID, PModel.Project_Name, PModel.Client_Name, PModel.Location, PModel.Roles);
+                PA.SaveProject(PModel);
                 /*string connectionstring = @"Data Source=DESKTOP-GQMFKE5\SQLEXPRESS;Initial Catalog=PioneerEmployeeDB;" +
                        " Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);

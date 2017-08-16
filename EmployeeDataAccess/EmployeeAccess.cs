@@ -40,7 +40,7 @@ namespace EmployeeDataAcces
     public class ProjectAccess
 
     {
-        public int SaveProject(int EmployeeID, string Project_Name, string Client_Name, string Location, string Roles)
+        public int SaveProject(ProjectModel ProjM)
         {
             int result = 0;
             try
@@ -49,7 +49,7 @@ namespace EmployeeDataAcces
                            " Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);
                 mysqlconnection.Open();
-                string q = @"INSERT INTO Project_Details(EmployeeID,Project_Name,Client_Name,Location,Roles)VALUES(" + EmployeeID + "," + "'" + Project_Name + "'," + "'" + Client_Name + "'," + "'" + Location + "'," + "'" + Roles + "')";
+                string q = @"INSERT INTO Project_Details(EmployeeID,Project_Name,Client_Name,Location,Roles)VALUES(" + ProjM.EmployeeID + "," + "'" + ProjM.Project_Name + "'," + "'" + ProjM.Client_Name + "'," + "'" + ProjM.Location + "'," + "'" + ProjM.Roles + "')";
                 SqlCommand command;
                 command = new SqlCommand(q, mysqlconnection);
                 result = command.ExecuteNonQuery();
@@ -71,7 +71,7 @@ namespace EmployeeDataAcces
 
     public class EducationAccess
     {
-        public int SaveEducation(string CourseType, string CourseSpecialisation, int YearOfPass)
+        public int SaveEducation(EducationModel EduModel)
         {
             int result = 0;
             try
@@ -81,7 +81,7 @@ namespace EmployeeDataAcces
                            " Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);
                 mysqlconnection.Open();
-                string q = @"INSERT INTO Education_Details(CourseType,CourseSpecialisation,YearOfPass)VALUES('" + CourseType + "'," + "'" + CourseSpecialisation + "'," + "" + YearOfPass + ")";
+                string q = @"INSERT INTO Education_Details(CourseType,CourseSpecialisation,YearOfPass)VALUES('" + EduModel.CourseType + "'," + "'" + EduModel.CourseSpecialisation + "'," + "" + EduModel.YearOfPass + ")";
                 SqlCommand command;
                 command = new SqlCommand(q, mysqlconnection);
                 result = command.ExecuteNonQuery();
@@ -103,7 +103,7 @@ namespace EmployeeDataAcces
 
     public class TechnicalAccess
     {
-        public int SaveTech(string UI, string Programming_Languages, string ORM_Technologies, string Databases)
+        public int SaveTech(TehnicalModel TechModel)
         {
             int result = 0;
             try
@@ -112,7 +112,7 @@ namespace EmployeeDataAcces
                            " Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);
                 mysqlconnection.Open();
-                string q = @"INSERT INTO Technical_Details(UI,Programming_Languages,ORM_Technologies,Databases)VALUES('" + UI + "'," + "'" + Programming_Languages + "'," + "'" + ORM_Technologies + "'," + "'" + Databases + "')";
+                string q = @"INSERT INTO Technical_Details(UI,Programming_Languages,ORM_Technologies,Databases)VALUES('" + TechModel.UI + "'," + "'" + TechModel.Programming_Languages + "'," + "'" + TechModel.ORM_Technologies + "'," + "'" + TechModel.Databases + "')";
                 SqlCommand command;
                 command = new SqlCommand(q, mysqlconnection);
                result= command.ExecuteNonQuery();
@@ -137,7 +137,7 @@ namespace EmployeeDataAcces
     }
     public class CompanyAccess
     {
-        public int SaveCompany1(string Employer_Name, long Contact_Number, string Location, string Website)
+        public int SaveCompany1(CompanyModel Comp)
         {
             int result = 0;
             try
@@ -146,7 +146,7 @@ namespace EmployeeDataAcces
                                        " Integrated Security=True";
                 SqlConnection mysqlconnection = new SqlConnection(connectionstring);
                 mysqlconnection.Open();
-                string q = @"INSERT INTO Company_Details(Employer_Name,Contact_Number,Location,Website)VALUES('" + Employer_Name + "'," + "" + Contact_Number + "," + "'" + Location + "'," + "'" + Website + "')";
+                string q = @"INSERT INTO Company_Details(Employer_Name,Contact_Number,Location,Website)VALUES('" + Comp.Employer_Name + "'," + "" + Comp.Contact_Number + "," + "'" + Comp.Location + "'," + "'" + Comp.Website + "')";
                 SqlCommand command;
                 command = new SqlCommand(q, mysqlconnection);
                 result = command.ExecuteNonQuery();
