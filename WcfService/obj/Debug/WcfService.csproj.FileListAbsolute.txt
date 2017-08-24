@@ -1,0 +1,10 @@
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\bin\WcfService.dll.config
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\bin\WcfService.dll
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\bin\WcfService.pdb
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\bin\EmployeeDataAccess.dll
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\bin\Model.dll
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\bin\EmployeeDataAccess.pdb
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\bin\Model.pdb
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\obj\Debug\WcfService.dll
+C:\Users\vijay kolli\Downloads\PioneerTechConsultancy-master\PioneerTechConsultancy-master\WcfService\obj\Debug\WcfService.pdb

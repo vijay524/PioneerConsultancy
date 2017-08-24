@@ -11,6 +11,8 @@ Project("{E729F059-12D4-455F-A2A4-FDA8DD25E08A}") = "Pioneer", "Pioneer\Pioneer.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTestConsultancySys.Model", "Model\PioneerTestConsultancySys.Model.csproj", "{A98E0BA9-0D2A-4C8E-B843-F931A70AE443}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PioneerTechWcfService", "WcfService\PioneerTechWcfService.csproj", "{FBCFBA91-6A06-4FBD-8345-FB1305D23126}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A98E0BA9-0D2A-4C8E-B843-F931A70AE443}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A98E0BA9-0D2A-4C8E-B843-F931A70AE443}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A98E0BA9-0D2A-4C8E-B843-F931A70AE443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBCFBA91-6A06-4FBD-8345-FB1305D23126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCFBA91-6A06-4FBD-8345-FB1305D23126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCFBA91-6A06-4FBD-8345-FB1305D23126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCFBA91-6A06-4FBD-8345-FB1305D23126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

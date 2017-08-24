@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files (x86)\InstallShield\2016\Support\0409\buildreport.xsl"?>
+<BuildReport ProductName="Pioneer" ProductVersion="1.00.0000" Built="8-24-2017 03-26-33 PM" Config="Default Configuration" Media="Debug" Uncompressed="0.00 MB">
+  <Features>
+    <Feature Title="##IDS_FEATURE_DISPLAY_NAME1##">Pioneer_Files</Feature>
+  </Features>
+  <Components>
+    <Component x64="32">AllOtherFiles</Component>
+    <Component x64="32" KeyPath="employeedataaccess.dll">EmployeeDataAccess.dll</Component>
+    <Component x64="32" KeyPath="pioneertestconsultancysystem">PioneerTestConsultancySystem.exe</Component>
+    <Component x64="32" KeyPath="_21CC2AE1CB603899D7BF0C8682D095E3">_22E4FF8629B79D1FA3CBCECF25FE521C</Component>
+  </Components>
+  <Prerequisites />
+  <MergeModules />
+  <DynamicLinks />
+  <Files>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTechnology\My Product Name" Component="AllOtherFiles" Modified="8/14/2017 6:30:59 PM" Size="15872" Version="">EmployeeDataAccess.pdb</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTechnology\My Product Name" Component="AllOtherFiles" Modified="8/8/2017 10:08:48 AM" Size="184" Version="">PioneerTestConsultancySystem.exe.config</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTechnology\My Product Name" Component="AllOtherFiles" Modified="8/14/2017 6:31:12 PM" Size="38400" Version="">PioneerTestConsultancySystem.pdb</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTechnology\My Product Name" Component="EmployeeDataAccess.dll" Modified="8/14/2017 6:30:59 PM" Size="8704" Version="1.0.0.0">EmployeeDataAccess.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTechnology\My Product Name" Component="_22E4FF8629B79D1FA3CBCECF25FE521C" Modified="8/9/2017 7:55:08 PM" Size="8704" Version="1.0.0.0">Model.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]PioneerTechnology\My Product Name" Component="PioneerTestConsultancySystem.exe" Modified="8/14/2017 6:31:12 PM" Size="33280" Version="1.0.0.0">PioneerTestConsultancySystem.exe</File>
+  </Files>
+</BuildReport>
